@@ -1,0 +1,25 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    encoding: UTF-8
+    mode: HTML
+  # datasource:
+  #   url: jdbc:mysql://localhost:3306/xxxxx
+  #   username: xxxx
+  #   password: xxxx
+  #   driver-class-name: com.mysql.cj.jdbc.Driver
+  profiles:
+    active: dev, fast
+  jpa:
+    hibernate:
+      ddl-auto: none
+  servlet:
+    multipart:
+      max-file-size: -1
+      max-request-size: -1
+server:
+  port: 8080
