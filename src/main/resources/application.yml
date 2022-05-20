@@ -7,11 +7,11 @@ spring:
     suffix: .html
     encoding: UTF-8
     mode: HTML
-  # datasource:
-  #   url: jdbc:mysql://localhost:3306/xxxxx
-  #   username: xxxx
-  #   password: xxxx
-  #   driver-class-name: com.mysql.cj.jdbc.Driver
+  datasource:
+    url: jdbc:postgresql://localhost:5432/webwithnft?useSSL=false
+    username: dev
+    password: devdev
+    driver-class-name: org.postgresql.Driver
   profiles:
     active: dev, fast
   jpa:
@@ -23,3 +23,6 @@ spring:
       max-request-size: -1
 server:
   port: 8080
+mybatis:
+  # typeAliasesPackage: com.xxx.xxx.dao.entity
+  mapper-locations: classpath:mappers/*.xml
