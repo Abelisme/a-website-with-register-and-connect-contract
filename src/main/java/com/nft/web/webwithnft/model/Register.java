@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 
 @Data
-@TableName("register_address")
+// @TableName("register_address")
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Register {
     private String address;

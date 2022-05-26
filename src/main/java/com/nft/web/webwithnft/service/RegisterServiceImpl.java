@@ -14,7 +14,6 @@ public class RegisterServiceImpl implements RegisterService {
 
     @Override
     public int insert(Register register) {
-        // TODO Auto-generated method stub
         int result = mapper.insert(register);
         
         return result;
